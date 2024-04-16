@@ -1,20 +1,15 @@
 import { createInterface } from "readline";
 import chalk from 'chalk';
-import { log } from "console";
 
 const tasks = []
 
 /*Lo usamos para leer la consola de comandos */
-
 const rl = createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-
-
 /*Pintamos el menú en la consola*/
-
 function displayMenu(){
     console.log(chalk.yellow.bold("🤠 To Do App 🍻"));
     console.log(chalk.bgBlueBright("Menú de opciones"));
@@ -23,7 +18,6 @@ function displayMenu(){
     console.log("3. Completar Tarea");
     console.log("4. Salir");
 }
-
 
 //Funcionalidad de añadir tarea
 function addTask() {
@@ -36,7 +30,6 @@ function addTask() {
 };
 
 //Funcionalidad de listar tareas
-
 function listTasks() {
     console.log(chalk.yellow.bold("\n🦊🦊🦊🦊🦊 Tareas 🦊🦊🦊🦊🦊\n"));
   
@@ -58,9 +51,9 @@ function listTasks() {
   
     displayMenu();
     chooseOption();
-  }
-//Funcionalidad de completar tareas
+}
 
+//Funcionalidad de completar tareas
 function completeTask() {
     rl.question(
         chalk.bgMagentaBright("Digita el número de la tearea a completar: "),
@@ -79,7 +72,6 @@ function completeTask() {
 }
 
 //Funcionalidad de marcar en el menú
-
 function chooseOption() {
     rl.question("Digita una opción:", (choice)=> {
         switch (choice) {

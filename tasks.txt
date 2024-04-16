@@ -1,0 +1,2 @@
+descansar un ratico|true
+tomar un descansito|false
