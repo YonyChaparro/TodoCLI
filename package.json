@@ -5,12 +5,17 @@
   "description": "ToDo Básico",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Yony Chaparro",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
